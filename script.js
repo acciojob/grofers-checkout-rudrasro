@@ -12,6 +12,7 @@ const getSum = () => {
     totalCell.colSpan = "2";
     totalCell.innerText = `Total Price: $${sum.toFixed(2)}`;
     totalRow.appendChild(totalCell);
+    totalCell.setAttribute("id", 'ans')
     document.querySelector("table").appendChild(totalRow);
 };
 
